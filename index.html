@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acne Studios</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="pages/page1/index.html">Woman</a></li>
+            <li><a href="pages/page2/index.html">Man</a></li>
+            <li><a href="sale.html">Sale</a></li>
+        </ul>
+    </div>
+    
+    <div class="header">
+        <img src="assets/img/acne.png" alt="Acne Studios Background">
+        <div class="overlay"></div>
+        <div class="logo">Acne Studios</div>
+
+    </div>
+    <div class="description"><h1> About Us</h1> 
+    <div class="description">Acne Studios is a multidisciplinary luxury fashion house based in Stockholm, Sweden that specializes in men's and women's ready-to-wear fashion, footwear, accessories and denim. When founded in 1996, the label derived its name from the creative collective ACNE; initially an acronym for Associated Computer Nerd Enterprises and later a backronym of Ambition to Create Novel Expressions.</div>
+    <div class="form">
+        <h1>Enter Email for Updates!</h1> <br>
+        <form id="emailForm" action="send_email.php" method="post" onsubmit="return confirmEmail(event)">
+            <label for="email">Recipient Email:</label> <br><br>
+            <input type="email" id="email" name="email" required> <br><br>
+            <button type="submit">Confirm Email</button>
+        </form>
+        <br>
+        </div>
+        <div id="confirmationMessage"></div> <!-- This div will display the confirmation message -->
+    </div>
+    <div class="socials-page">
+        <h1>Follow Us</h1>
+        <p>Stay connected with us on social media for the latest updates, offers, and more!</p>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/acnestudios/" target="_blank" class="social-icon">
+                <img src="./assets/img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.x.com/acnestudios" target="_blank" class="social-icon">
+                <img src="./assets/img/x.webp" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/acnestudios" target="_blank" class="social-icon">
+                <img src="./assets/img/fb.png" alt="Facebook">
+            </a>
+        </div>
+    </div>
+   <footer>Acne Studios. All rights reserved 2025.</footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

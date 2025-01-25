@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+}
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 2;
+}
+.header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+}
+.description {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 120px;
+    padding-top: 10px;
+    text-align: center; /* Center-align text */
+    margin-top: 10px; /* Space above the description */
+    z-index: 3; /* Make sure it's above the background */
+    position: relative;
+}
+
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+    text-align: center;
+    display: flex;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    margin: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    transition: color 0.3s;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-bar ul li a:focus, .nav-bar ul li a:hover {
+    color: #999;
+}
+
+.form {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 0%;
+}
+.form button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 12%;
+    height: 5vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: #a1a1a1;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.form input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 20%;
+    padding: 1%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: medium;
+}
+.form button:hover {
+    background-color: rgb(27, 69, 236);
+    color: rgb(255, 255, 255);
+}
+
+.socials-page {
+    text-align: center;
+    padding-bottom: 10px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-page h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.socials-page p {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Social Icon Styles */
+.social-icon img {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    border-radius: 50%; /* Makes the image circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add hover shadow */
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-content p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
